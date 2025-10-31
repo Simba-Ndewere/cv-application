@@ -11,7 +11,7 @@ function App() {
         <div className='nav-img'>
           <img src={navImg} alt='nav bar icon'></img>
         </div>
-        <h1>CV GENERATOR</h1>
+        <h2>CV GENERATOR</h2>
       </div>
     </div>
   )
