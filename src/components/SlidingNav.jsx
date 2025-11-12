@@ -1,11 +1,11 @@
 import '../styles/SlidingNav.css';
 import { useState } from 'react';
 
-function SlidingNav({close}) {
+function SlidingNav({widthValue, setWidth}) {
 
     return (
-        <div className="sideNav" id="mySideNav">
-            <a href="#" className="closebtn" onClick={close}>X</a>
+        <div className="sideNav" style={{width: widthValue}}>
+            <a href="#" className="closebtn" onClick={() => setWidth('0%')}>x</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Clients</a>

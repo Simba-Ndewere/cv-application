@@ -4,19 +4,18 @@ import navImg from './assets/list.png'
 import SlidingNav from './components/SlidingNav.jsx'
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  function closeMenu(){
-    setMenuOpen(false);
-  }
+  const [navWidth, setNavWidth] = useState('0%');
 
   return (
     <div className="container">
       <div className="nav-bar">
         <div className='nav-img'>
-          <img src={navImg} alt='nav bar icon' onClick={() => setMenuOpen(true)}></img>
+          <img src={navImg} alt='nav bar icon' onClick={() => setNavWidth('100%')}></img>
         </div>
-        {menuOpen && <SlidingNav close={closeMenu} />}
+          <SlidingNav 
+          widthValue={navWidth}
+          setWidth={setNavWidth}/>
         <h2>CV GENERATOR</h2>
       </div>
     </div>
