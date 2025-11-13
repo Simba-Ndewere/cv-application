@@ -12,22 +12,26 @@ function GeneralInformation() {
     return (
         <div className='generalContainer'>
             <h2>General Information</h2>
-            <input
-                placeholder='First name'
-                type='text'
-            />
-            <input
-                placeholder='Last name'
-                type='text'
-            />
-            <input
-                placeholder='Email'
-                type='email'
-            />
-            <input
-                placeholder='Phone Number'
-                type='phone'
-            />
+            <label className='custom-field'>
+                <input type='text' required/>
+                <span class='placeholder'>first name</span>
+            </label>
+
+            <label className='custom-field'>
+                <input type='text' required/>
+                <span class='placeholder'>last name</span>
+            </label>
+            
+            <label className='custom-field'>
+                <input type='email' required/>
+                <span class='placeholder'>email</span>
+            </label>
+            
+            <label className='custom-field'>
+                <input type='phone' required/>
+                <span class='placeholder'>phone</span>
+            </label>
+            
         </div>
     )
 }
