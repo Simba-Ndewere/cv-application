@@ -8,58 +8,75 @@
     font-size: 16px;
 }
 
-.general {
+.general{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.generalContainer {
+.form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-}
-
-.custom-field {
+    gap: 10px;
+    background-color: #24323d;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
     position: relative;
-    font-size: 1rem;
-    padding-top: 1.25em;
-    margin-bottom: 0.325em;
 }
 
-.custom-field input {
-    border: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: #f2f2f2;
-    padding: 1em;
-    border-radius: 3px;
-    width: 250px;
+.title {
+    font-size: 1.75rem;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form label{
+    position: relative;
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
     outline: none;
+    border: none;
+    border-radius: 10px;
 }
 
-.custom-field .placeholder {
-    position: absolute;
-    left: 12px;
-    top: calc(50% + 10px);
-    transform: translateY(-50%);
-    color: #aaa;
-    transition:
-        top 0.3s ease,
-        font-size 0.3s ease,
-        color 0.3s ease;
+.submit {
+    border: none;
+    outline: none;
+    background-color: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transform: 0.3s ease;
+    cursor: pointer;
 }
 
-.custom-field input:valid + .placeholder,
-.custom-field input:focus + .placeholder {
-    top: 10px;
-    font-size: 0.8rem;
-    color: #222;
+.submit:hover {
+   background: #1ec79a;
+   transition: 0.3s;
 }
 
-h2 {
-    font-size: 1.5rem;
+.summary {
+    height: 100px;
+}
+
+textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  outline: none;
+  width: 100%;
 }

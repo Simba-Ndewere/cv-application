@@ -12,13 +12,13 @@
 .sideNav {
   height: 100%;
   position: fixed;
+  width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: white;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
 }
 
 .sideNav a {
@@ -42,4 +42,12 @@
   margin-left: 50px;
   height: 20px;
   width: 20px;
+}
+
+.slideIn {
+  transform: translateX(-100%);
+}
+
+.slideOut {
+  transform: translateX(0);
 }

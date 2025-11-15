@@ -11,29 +11,34 @@ function GeneralInformation() {
 
     return (
         <div className='general'>
+
             <div className='generalContainer'>
-                <h2>General Information</h2>
-                <label className='custom-field'>
-                    <input type='text' required />
-                    <span className='placeholder'>first name</span>
-                </label>
-
-                <label className='custom-field'>
-                    <input type='text' required />
-                    <span className='placeholder'>last name</span>
-                </label>
-
-                <label className='custom-field'>
-                    <input type='email' required />
-                    <span className='placeholder'>email</span>
-                </label>
-
-                <label className='custom-field'>
-                    <input type='phone' required />
-                    <span className='placeholder'>phone</span>
-                </label>
-
+                <form className='form'>
+                    <p className='title'>General Information</p>
+                    <div className='form-group'>
+                        <label>
+                            <input type='text'  placeholder="Full name" required />
+                        </label>
+                        <label>
+                            <input type='email'  placeholder="Email" required />
+                        </label>
+                        <label>
+                            <input type='phone' placeholder="Phone number"required />
+                        </label>
+                        <label>
+                            <input type='text'  placeholder="Address" required />
+                        </label>
+                        <label>
+                            <textarea className="summary" placeholder="Summary"></textarea>
+                        </label>
+                        <button className='submit'>
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
+
+
         </div>
     )
 }

@@ -13,10 +13,11 @@ function App() {
         <div className='nav-img'>
           <img src={navImg} alt='nav bar icon' onClick={() => setNavWidth('100%')}></img>
         </div>
-          <SlidingNav 
+        <SlidingNav
           widthValue={navWidth}
-          setWidth={setNavWidth}/>
+          setWidth={setNavWidth} />
         <h2>CV GENERATOR</h2>
+
       </div>
     </div>
   )
