@@ -13,12 +13,17 @@
     justify-content: center;
 }
 
+.generalContainer{
+    border: solid 2px black;
+    width: 80%;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     background-color: #24323d;
-    max-width: 350px;
+    max-width: 100%;
     padding: 20px;
     border-radius: 10px;
     position: relative;

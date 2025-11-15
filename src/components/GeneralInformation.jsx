@@ -29,7 +29,7 @@ function GeneralInformation() {
                             <input type='text'  placeholder="Address" required />
                         </label>
                         <label>
-                            <textarea className="summary" placeholder="Summary"></textarea>
+                            <textarea className="summary" placeholder="Summary" required></textarea>
                         </label>
                         <button className='submit'>
                             Submit
