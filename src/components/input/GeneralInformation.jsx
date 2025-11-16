@@ -1,6 +1,6 @@
 import { use } from 'react';
 import { useState } from 'react';
-import '../styles/GeneralInformation.css';
+import '../../styles/GeneralInformation.css';
 
 function GeneralInformation() {
 

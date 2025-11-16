@@ -1,6 +1,6 @@
-import '../styles/SlidingNav.css';
+import '../../styles/SlidingNav.css';
 import { useState } from 'react';
-import closeImg from '../assets/close.png'
+import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
 import EducationalExperience from './EducationalExperience';
 
