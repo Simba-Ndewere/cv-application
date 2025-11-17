@@ -1,24 +1,24 @@
 import { useState } from 'react'
 import '../../styles/GeneralInformationCV.css'
-function GeneralInformationCV() {
-
+function GeneralInformationCV({generalInfo}) {
+    
     return (
         <div className='generalContainerCV'>
-            <p className='fullname'>John Doe</p>
+            <p className='fullname'>{generalInfo.fullName}</p>
             <div className='numEmailAddress'>
                 <div className='phone'>
-                    012456890
+                    {generalInfo.phoneNumber}
                 </div>
                 <div className='email'>
-                    johndoe@gmail.com
+                    {generalInfo.email}
                 </div>
                 <div className='address'>
-                    london
+                    {generalInfo.address}
                 </div>
             </div>
             <div className='personalStatement'>
                 <p className='titleCV'>Personal Statement</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>{generalInfo.personalStatement}</p>
             </div>
         </div>
     )
