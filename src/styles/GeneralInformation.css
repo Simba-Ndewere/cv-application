@@ -8,15 +8,14 @@
     font-size: 16px;
 }
 
-.general{
+.general {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid black 2px;
     align-items: center;
 }
 
-.generalContainer{
+.generalContainer {
     width: 80%;
     display: none;
 }
@@ -28,18 +27,10 @@
     background-color: #24323d;
     max-width: 100%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     position: relative;
 }
 
-.title {
-    font-size: 1.75rem;
-    color: #1ab188;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    position: relative;
-    text-align: center;
-}
 
 .form-group {
     display: flex;
@@ -48,11 +39,11 @@
     gap: 6px;
 }
 
-.form label{
+.form label {
     position: relative;
 }
 
-.form label input{
+.form label input {
     width: 100%;
     padding: 10px 10px 20px 10px;
     outline: none;
@@ -73,8 +64,8 @@
 }
 
 .submit:hover {
-   background: #1ec79a;
-   transition: 0.3s;
+    background: #1ec79a;
+    transition: 0.3s;
 }
 
 .summary {
@@ -82,35 +73,46 @@
 }
 
 textarea {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 10px 20px 10px;
-  outline: none;
-  width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    width: 100%;
 }
-
-/**/
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    background-color: #24323d;
+    font-size: 1.75rem;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
+.active,
+.collapsible:hover {
+    background-color: #24323d;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  overflow: hidden;
-  background-color: #f1f1f1;
+.collapsible:after {
+    content: '+';
+    font-size: 15px;
+    color: #1ab188 !important;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "-";
 }

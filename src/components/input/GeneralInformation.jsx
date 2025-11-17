@@ -1,4 +1,3 @@
-import { use } from 'react';
 import { useState } from 'react';
 import '../../styles/GeneralInformation.css';
 
@@ -18,10 +17,9 @@ function GeneralInformation({ setGeneralInfo }) {
 
     return (
         <div className='general'>
-            <buton type="button" className={`collapsible ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>General Information</buton>
+            <button type="button" className={`collapsible ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>General Information</button>
             <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
                 <form className='form' action={handleSubmit}>
-                    <p className='title'>General Information</p>
                     <div className='form-group'>
                         <label>
                             <input type='text' name="fullname" placeholder="Full name" required />
