@@ -4,6 +4,8 @@ import '../../styles/GeneralInformation.css';
 
 function GeneralInformation({ setGeneralInfo }) {
 
+    const [collapsible, openCollapsible] = useState(false);
+
     function handleSubmit(formData) {
         const fullname = formData.get("fullname").toString();
         const email = formData.get("email").toString();;
@@ -11,13 +13,13 @@ function GeneralInformation({ setGeneralInfo }) {
         const address = formData.get("address").toString();;
         const statement = formData.get("statement").toString();;
 
-        setGeneralInfo({fullName:fullname,email:email,phoneNumber:phone,address:address,personalStatement:statement});
+        setGeneralInfo({ fullName: fullname, email: email, phoneNumber: phone, address: address, personalStatement: statement });
     }
 
     return (
         <div className='general'>
-
-            <div className='generalContainer'>
+            <buton type="button" className={`collapsible ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>General Information</buton>
+            <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
                 <form className='form' action={handleSubmit}>
                     <p className='title'>General Information</p>
                     <div className='form-group'>

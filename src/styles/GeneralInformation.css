@@ -10,12 +10,15 @@
 
 .general{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    border: solid black 2px;
+    align-items: center;
 }
 
 .generalContainer{
-    border: solid 2px black;
     width: 80%;
+    display: none;
 }
 
 .form {
@@ -84,4 +87,30 @@ textarea {
   padding: 10px 10px 20px 10px;
   outline: none;
   width: 100%;
+}
+
+/**/
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
