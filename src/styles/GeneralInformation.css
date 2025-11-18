@@ -31,7 +31,6 @@
     position: relative;
 }
 
-
 .form-group {
     display: flex;
     width: 100%;
@@ -115,4 +114,18 @@ textarea {
 
 .active:after {
     content: "-";
+}
+
+@media (min-width: 1000px) {
+    .general {
+        width: 100%;
+    }
+
+    .generalContainer {
+        width: 100%;
+    }
+
+    .collapsible {
+        width: 100%;
+    }
 }
