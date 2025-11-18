@@ -12,7 +12,6 @@
 .sideNav {
   height: 100%;
   position: fixed;
-  width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
@@ -44,10 +43,14 @@
   width: 20px;
 }
 
-.slideIn {
-  transform: translateX(-100%);
-}
 
-.slideOut {
-  transform: translateX(0);
+@media (min-width: 1000px) {
+  .sideNav {
+    position: static;
+    left: auto;
+    height: auto;
+    width: 100% !important;
+    transform: none !important;
+    padding-top: 0;
+  }
 }

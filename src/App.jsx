@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 import './styles/App.css'
 import navImg from './assets/list.png'
 import SlidingNav from './components/input/SlidingNav.jsx'
@@ -10,25 +10,27 @@ function App() {
   const [generalInformation, setGeneralInfo] = useState({ fullName: 'John Doe', email: 'johndoe@gmail.com', phoneNumber: '012456890', address: 'london', personalStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum' });
 
   return (
-    <div className="container">
-
-      <div className="nav-bar">
-        <div className='nav-img'>
-          <img src={navImg} alt='nav bar icon' onClick={() => setNavWidth('100%')}></img>
+    <>
+      <h2 className="desktop">CV GENERATOR</h2>
+      <div className="container">
+        <div className="nav-bar">
+          <div className='nav-img'>
+            <img src={navImg} alt='nav bar icon' onClick={() => setNavWidth('100%')}></img>
+          </div>
+          <SlidingNav
+            widthValue={navWidth}
+            setWidth={setNavWidth}
+            setGeneralInfo={setGeneralInfo}
+          />
+          <h2 className="mobile">CV GENERATOR</h2>
         </div>
-        <SlidingNav
-          widthValue={navWidth}
-          setWidth={setNavWidth}
-          setGeneralInfo={setGeneralInfo} />
-        <h2>CV GENERATOR</h2>
+        <div className='generalInformation'>
+          <GeneralInformationCV
+            generalInfo={generalInformation}
+          />
+        </div>
       </div>
-
-      <div className='generalInformation'>
-        <GeneralInformationCV 
-        generalInfo={generalInformation}
-        />
-      </div>
-    </div>
+    </>
   )
 }
 

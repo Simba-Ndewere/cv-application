@@ -42,8 +42,6 @@ function GeneralInformation({ setGeneralInfo }) {
                     </div>
                 </form>
             </div>
-
-
         </div>
     )
 }
