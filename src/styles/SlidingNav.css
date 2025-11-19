@@ -53,4 +53,8 @@
     transform: none !important;
     padding-top: 0;
   }
+
+  .closebtn {
+    display: none;
+  }
 }

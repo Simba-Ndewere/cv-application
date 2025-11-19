@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h2 className="desktop">CV GENERATOR</h2>
+      <h2 className="desktop">GENERATE CV</h2>
       <div className="container">
         <div className="nav-bar">
           <div className='nav-img'>
@@ -22,7 +22,7 @@ function App() {
             setWidth={setNavWidth}
             setGeneralInfo={setGeneralInfo}
           />
-          <h2 className="mobile">CV GENERATOR</h2>
+          <h2 className="mobile">GENERATE CV</h2>
         </div>
         <div className='generalInformation'>
           <GeneralInformationCV
