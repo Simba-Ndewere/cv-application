@@ -1,0 +1,16 @@
+.skillsCVContainer {
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skillIndividual {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}

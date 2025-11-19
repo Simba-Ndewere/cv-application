@@ -4,6 +4,7 @@ import { useState } from 'react';
 function Skills({ setSkills }) {
 
     const [collapsible, openCollapsible] = useState(false);
+    
     function handleSubmit(formData) {
     }
 
