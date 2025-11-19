@@ -1,0 +1,47 @@
+.collapsibleSkills {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    width: 80%;
+    border-radius: 0 0 0 0;
+    background-color: #24323d;
+    font-size: 1.75rem;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.active,
+.collapsibleSkills:hover {
+    background-color: #2f4150;
+}
+
+.collapsibleSkills:after {
+    content: '+';
+    font-size: 15px;
+    color: #1ab188 !important;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "-";
+}
+
+@media (min-width: 1000px) {
+    .general {
+        width: 100%;
+    }
+
+    .generalContainer {
+        width: 100%;
+    }
+
+    .collapsibleSkills {
+        width: 100%;
+    }
+}

@@ -2,9 +2,9 @@ import '../../styles/SlidingNav.css';
 import { useState } from 'react';
 import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
-import EducationalExperience from './EducationalExperience';
+import Skills from './Skills';
 
-function SlidingNav({ widthValue, setWidth, setGeneralInfo }) {
+function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills }) {
 
     return (
         <div className="navContainer">
@@ -12,6 +12,8 @@ function SlidingNav({ widthValue, setWidth, setGeneralInfo }) {
                 <img src={closeImg} className="closebtn" alt='close nav icon' onClick={() => setWidth('0%')}></img>
                 <GeneralInformation 
                     setGeneralInfo={setGeneralInfo}/>
+                <Skills
+                    setSkills={setSkills}/>
             </div>
         </div>
     )

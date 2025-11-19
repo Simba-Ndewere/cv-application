@@ -17,6 +17,10 @@
     background-color: lightgray;
     border-radius: 5px;
     padding: 0.5em;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .titleCV {
@@ -25,4 +29,9 @@
     display: inline-block;
     padding-bottom: 2px;
     border-bottom: 2px solid #ccc;
+}
+
+img {
+    height: 15px;
+    width: 15px;
 }

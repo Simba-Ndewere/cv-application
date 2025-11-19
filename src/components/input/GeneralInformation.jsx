@@ -31,7 +31,7 @@ function GeneralInformation({ setGeneralInfo }) {
                             <input type='phone' name="phone" placeholder="Phone number" required />
                         </label>
                         <label>
-                            <input type='text' name="address" placeholder="Address" required />
+                            <input type='text' name="address" placeholder="City" required />
                         </label>
                         <label>
                             <textarea className="summary" name="statement" placeholder="Personal statement" required></textarea>
