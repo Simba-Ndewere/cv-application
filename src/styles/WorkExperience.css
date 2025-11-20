@@ -1,0 +1,85 @@
+.collapsibleExperience {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    width: 80%;
+    border-radius: 0 0 0 0;
+    background-color: #24323d;
+    font-size: 1.75rem;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.active,
+.collapsibleExperience:hover {
+    background-color: #2f4150;
+}
+
+.collapsibleExperience:after {
+    content: '+';
+    font-size: 15px;
+    color: #1ab188 !important;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "-";
+}
+
+.titleLocation {
+    display: flex;
+    gap: 10px;
+}
+
+.titlePosition,
+.location {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.company,
+.date {
+    margin-top: 0;
+}
+
+.companyDate {
+    display: flex;
+    color: gray;
+    margin-top: 0px;
+    gap: 10px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+@media (min-width: 1000px) {
+    .general {
+        width: 100%;
+    }
+
+    .generalContainer {
+        width: 100%;
+    }
+
+    .collapsibleExperience {
+        width: 100%;
+    }
+}

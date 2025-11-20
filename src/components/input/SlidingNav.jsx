@@ -3,6 +3,7 @@ import { useState } from 'react';
 import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';
+import WorkExperience from './WorkExperience';
 
 function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills }) {
 
@@ -15,6 +16,9 @@ function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills })
                 <Skills
                     setSkills={setSkills}
                     skills={skills}/>
+                <WorkExperience
+                    
+                />
             </div>
         </div>
     )

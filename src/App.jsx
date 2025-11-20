@@ -36,7 +36,7 @@ function App() {
           <SkillsCV
             defaultSkills={skills}
           />
-          <WorkExperienceCV/>
+          <WorkExperienceCV />
         </div>
 
       </div>
