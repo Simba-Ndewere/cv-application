@@ -6,8 +6,8 @@ function SkillsCV({ defaultSkills }) {
             <p className='titleCV'>Technical Skills</p>
             <div className='skillsCVContainer'>
                 {defaultSkills.map((skill) => {
-                    return <div className='skillIndividual'>
-                        {skill}
+                    return <div key={skill.id} className='skillIndividual'>
+                        {skill.name}
                     </div>
                 })}
             </div>

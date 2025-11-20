@@ -7,6 +7,14 @@ function Skills({ setSkills, skills }) {
     const [collapsible, openCollapsible] = useState(false);
 
     function handleSubmit(formData) {
+        const skillName = formData.get("skill").toString();
+        setSkills([
+            ...skills,
+            {
+                name: skillName,
+                id: crypto.randomUUID()
+            }
+        ]);
     }
 
     return (
@@ -15,8 +23,8 @@ function Skills({ setSkills, skills }) {
             <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
                 <div className='createdSkills'>
                     {skills.map((skill) => {
-                        return <div className='oneCreatedSkill skillIndividual' >
-                            {skill}
+                        return <div key={skill.id} className='oneCreatedSkill skillIndividual' >
+                            {skill.name}
                             <img src={delecteIcon}></img>
                         </div>
                     })}
