@@ -1,6 +1,6 @@
 .skillsCVContainer {
     display: flex;
-    width: 50%;
+    width: 100%;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -13,4 +13,10 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 1000px) {
+    .skillsCVContainer {
+        width: 50%;
+    }
 }

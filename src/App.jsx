@@ -24,6 +24,7 @@ import SkillsCV from './components/output/SkillsCV.jsx';
               setWidth={setNavWidth}
               setGeneralInfo={setGeneralInfo}
               setSkills={setSkills}
+              skills={skills}
             />
             <h2 className="mobile">GENERATE CV</h2>
           </div>

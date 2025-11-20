@@ -4,7 +4,7 @@ import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';
 
-function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills }) {
+function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills }) {
 
     return (
         <div className="navContainer">
@@ -13,7 +13,8 @@ function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills }) {
                 <GeneralInformation 
                     setGeneralInfo={setGeneralInfo}/>
                 <Skills
-                    setSkills={setSkills}/>
+                    setSkills={setSkills}
+                    skills={skills}/>
             </div>
         </div>
     )
