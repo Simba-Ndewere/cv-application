@@ -3,7 +3,7 @@ import { useState } from 'react';
 import delecteIcon from '../../assets/delete.png';
 
 function Skills({ setSkills, skills }) {
-
+    
     const [collapsible, openCollapsible] = useState(false);
 
     function handleSubmit(formData) {

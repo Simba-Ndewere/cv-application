@@ -25,7 +25,7 @@ function GeneralInformationCV({generalInfo}) {
             </div>
             <div className='personalStatement'>
                 <p className='titleCV'>Personal Statement</p>
-                <p>{generalInfo.personalStatement}</p>
+                <p className='infoStatement'>{generalInfo.personalStatement}</p>
             </div>
         </div>
     )

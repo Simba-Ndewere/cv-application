@@ -9,7 +9,13 @@
 }
 
 .fullname {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.generalContainerCV {
+    display: flex;
+    flex-direction: column;
 }
 
 .phone,
@@ -35,4 +41,9 @@
 img {
     height: 15px;
     width: 15px;
+}
+
+.infoStatement{
+    margin-top: 0;
+    margin-bottom: 0;
 }
