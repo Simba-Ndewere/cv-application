@@ -25,7 +25,13 @@ function Skills({ setSkills, skills }) {
                     {skills.map((skill) => {
                         return <div key={skill.id} className='oneCreatedSkill skillIndividual' >
                             {skill.name}
-                            <img src={delecteIcon}></img>
+                            <img src={delecteIcon} onClick={() => {
+                                setSkills(
+                                    skills.filter(a =>
+                                        a.id != skill.id
+                                    )
+                                )
+                            }}></img>
                         </div>
                     })}
                 </div>
