@@ -21,15 +21,10 @@
 }
 
 .collapsibleExperience:after {
-    content: '+';
     font-size: 15px;
     color: #1ab188 !important;
     float: right;
     margin-left: 5px;
-}
-
-.active:after {
-    content: "-";
 }
 
 .titleLocation {
@@ -65,9 +60,39 @@
     margin-bottom: 0;
 }
 
-ul{
+ul {
     padding-left: 15px;
     margin-top: 0;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.year input[type="date"] {
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.enteredExperience {
+    padding: 5px;
+    padding-left: 20px;
+    background-color: #24323d;
+    color: #1ab188;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.enteredExperience img {
+    height: 18px;
+    width: 18px;
 }
 
 @media (min-width: 1000px) {

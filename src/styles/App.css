@@ -16,11 +16,10 @@
 
 .nav-bar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 0%;
     background-color: #24323d;
     color: #1ab188;
+    justify-content: flex-start;
 }
 
 .nav-img img {
@@ -39,17 +38,19 @@
 @media (min-width: 1000px) {
     .container {
         display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
-    
+
     .nav-bar {
         width: 30%;
         background-color: white;
+        margin-top: 50px;
     }
 
     .generalInformation {
         width: 70%;
-        padding: 30px;
-        padding-top: 0px;
+        padding: 1px 30px 0px 30px;
     }
 
     .nav-img {

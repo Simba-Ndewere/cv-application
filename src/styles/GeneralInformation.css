@@ -102,15 +102,10 @@ textarea {
 }
 
 .collapsible:after {
-    content: '+';
     font-size: 15px;
     color: #1ab188 !important;
     float: right;
     margin-left: 5px;
-}
-
-.active:after {
-    content: "-";
 }
 
 @media (min-width: 1000px) {
