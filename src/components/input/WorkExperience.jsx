@@ -13,13 +13,17 @@ function WorkExperience({ workExperience, setWorkExperience }) {
         <div className='general'>
             <button type="button" className={`collapsibleExperience ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>Work Experience</button>
             <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
-                <div className="enteredExperience">
-                    <p className="titleExpe">Senior Software Engineer - </p>
-                    <p className="companyExpe">JP Morgan</p>
-                    <div>
-                        <img src={deleteIcon} img/>
-                    </div>
-                </div>
+                    {
+                        workExperience.map((experience) => {
+                            return <div className="enteredExperience">
+                                <p className="titleExpe">{experience.title} - </p>
+                                <p className="companyExpe">{experience.company}</p>
+                                <div className="deleteExpe">
+                                    <img src={deleteIcon} img />
+                                </div>
+                            </div>
+                        })
+                    }
                 <form className='form' action={handleSubmit}>
                     <div className='form-group'>
                         <label>

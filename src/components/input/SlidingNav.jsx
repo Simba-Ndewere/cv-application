@@ -5,7 +5,7 @@ import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
 
-function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills }) {
+function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills, workExperience, setWorkExperience }) {
 
     return (
         <div className="navContainer">
@@ -17,7 +17,8 @@ function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills })
                     setSkills={setSkills}
                     skills={skills}/>
                 <WorkExperience
-                    
+                    workExperience={workExperience}
+                    setWorkExperience={setWorkExperience}
                 />
             </div>
         </div>

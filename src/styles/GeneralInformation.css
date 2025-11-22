@@ -108,6 +108,14 @@ textarea {
     margin-left: 5px;
 }
 
+.titleExpe:hover {
+    cursor: pointer;
+}
+
+.deleteExpe {
+    cursor: pointer;
+}
+
 @media (min-width: 1000px) {
     .general {
         width: 100%;
