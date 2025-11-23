@@ -85,8 +85,7 @@ function WorkExperience({ workExperience, setWorkExperience }) {
         <div className='general'>
             <button type="button" className={`collapsibleExperience ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>Work Experience</button>
             <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
-                {
-                    workExperience.map((experience) => {
+                {workExperience.map((experience) => {
                         return <div key={experience.id} className="enteredExperience">
                             <p className="companyExpe" onClick={() => populateForm(experience.id)}>{experience.company}</p>
                             <div className="deleteExpe">

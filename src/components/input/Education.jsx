@@ -26,8 +26,8 @@ function Education({ education, setEducation }) {
             const newEducation = education.map((edu) => {
                 if (edu.id === clickedEducationId) {
                     return {
-                        degree:degree,
-                        university:university,
+                        degree: degree,
+                        university: university,
                         to: yearEnd,
                         from: yearStart
                     }
@@ -72,18 +72,20 @@ function Education({ education, setEducation }) {
         <div className='general'>
             <button type="button" className={`collapsibleEducation ${collapsible ? 'active' : ''}`} onClick={() => collapsible ? openCollapsible(false) : openCollapsible(true)}>Education</button>
             <div style={collapsible ? { display: "block" } : { display: "none" }} className='generalContainer'>
-                {education.map((singleEducation => {
+                {education.map((singleEducation) => {
                     return <div key={singleEducation.id} className="educationShown">
                         <p className="educationTitle" onClick={() => populateForm(singleEducation.id)}>{singleEducation.degree.toUpperCase()}</p>
-                        <img src={deleteIcon} onClick={() => {
-                            setEducation(
-                                education.filter(educationClicked =>
-                                    educationClicked.id !== clickedEducationId
+                        <div className="deleteExpe">
+                            <img src={deleteIcon} onClick={() => {
+                                setEducation(
+                                    education.filter(educationClicked =>
+                                        educationClicked.id !== singleEducation.id
+                                    )
                                 )
-                            )
-                        }}></img>
+                            }}></img>
+                        </div>
                     </div>
-                }))}
+                })}
                 <form className='form' action={handleSubmit}>
                     <div className='form-group'>
                         <label>
