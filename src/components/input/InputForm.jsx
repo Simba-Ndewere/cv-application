@@ -18,8 +18,7 @@ function InputForm({ widthValue, setWidth, setGeneralInfo, setSkills, skills, wo
                     skills={skills}/>
                 <WorkExperience
                     workExperience={workExperience}
-                    setWorkExperience={setWorkExperience}
-                />
+                    setWorkExperience={setWorkExperience}/>
             </div>
         </div>
     )

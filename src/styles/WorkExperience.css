@@ -88,12 +88,6 @@ ul {
     align-items: center;
     gap: 10px;
 }
-
-.enteredExperience p {
-    margin: 0;
-    padding: 0;
-}
-
 .enteredExperience img {
     height: 18px;
     width: 18px;
@@ -103,6 +97,16 @@ ul {
     white-space: pre-line;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.tasksInput {
+    resize: none;
+}
+
+.experienceSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (min-width: 1000px) {
