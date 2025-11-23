@@ -81,8 +81,7 @@ ul {
 }
 
 .enteredExperience {
-    padding: 5px;
-    padding-left: 20px;
+    padding: 0px 0px 0px 20px;
     background-color: #24323d;
     color: #1ab188;
     display: flex;
@@ -90,9 +89,20 @@ ul {
     gap: 10px;
 }
 
+.enteredExperience p {
+    margin: 0;
+    padding: 0;
+}
+
 .enteredExperience img {
     height: 18px;
     width: 18px;
+}
+
+.tasks {
+    white-space: pre-line;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 @media (min-width: 1000px) {

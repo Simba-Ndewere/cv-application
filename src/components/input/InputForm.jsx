@@ -5,7 +5,7 @@ import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
 
-function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills, workExperience, setWorkExperience }) {
+function InputForm({ widthValue, setWidth, setGeneralInfo, setSkills, skills, workExperience, setWorkExperience }) {
 
     return (
         <div className="navContainer">
@@ -25,4 +25,4 @@ function SlidingNav({ widthValue, setWidth, setGeneralInfo, setSkills, skills, w
     )
 }
 
-export default SlidingNav; 
+export default InputForm; 
