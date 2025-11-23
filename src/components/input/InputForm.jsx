@@ -1,5 +1,4 @@
 import '../../styles/SlidingNav.css';
-import { useState } from 'react';
 import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';

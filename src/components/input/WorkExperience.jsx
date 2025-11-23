@@ -4,7 +4,6 @@ import deleteIcon from '../../assets/delete.png'
 
 function WorkExperience({ workExperience, setWorkExperience }) {
 
-
     const [collapsible, openCollapsible] = useState(false);
     const [clickedExperienceId, setWorkExperienceId] = useState('');
     const [clickedExpe, setClickedExpe] = useState(false);
@@ -26,7 +25,7 @@ function WorkExperience({ workExperience, setWorkExperience }) {
         const tasks = formData.get("experienceTasks").toString();
 
         yearEnd = yearEnd === '' ? 'present' : yearEnd;
-        
+
         if (clickedExpe) {
             const newWorkExperience = workExperience.map((experience) => {
                 if (experience.id === clickedExperienceId) {
@@ -58,7 +57,6 @@ function WorkExperience({ workExperience, setWorkExperience }) {
                 }
             ]);
         }
-
         setCompany("");
         setTitle("");
         setLocation("");
@@ -93,7 +91,13 @@ function WorkExperience({ workExperience, setWorkExperience }) {
                             <p className="titleExpe" onClick={() => populateForm(experience.id)}>{experience.title} - </p>
                             <p className="companyExpe">{experience.company}</p>
                             <div className="deleteExpe">
-                                <img src={deleteIcon}></img>
+                                <img src={deleteIcon} onClick={() => {
+                                    setWorkExperience(
+                                        workExperience.filter(experienceEntered =>
+                                            experience.id !== experienceEntered.id
+                                        )
+                                    )
+                                }}></img>
                             </div>
                         </div>
                     })
