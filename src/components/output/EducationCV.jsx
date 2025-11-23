@@ -1,14 +1,18 @@
 import '../../styles/EducationCV.css'
-function Education() {
+function Education({ education }) {
     return (
         <div className="generalContainerCV">
             <div>
                 <p className='titleCV'>Education</p>
-                <p className='degree'>MASTER OF SCIENCE IN CYBER SECURITY</p>
-                <div className="uniYear">
-                    <p>University Of London</p>
-                    <p>2022-09-01 to 2023-08-31</p>
-                </div>
+                {education.map((singleEducation) => {
+                    return <div key={singleEducation.id}>
+                        <p className='degree'>{singleEducation.degree.toUpperCase()}</p>
+                        <div className="uniYear">
+                            <p>{singleEducation.university}, </p>
+                            <p>{singleEducation.from} to {singleEducation.to}</p>
+                        </div>
+                    </div>
+                })}
             </div>
         </div>
     )

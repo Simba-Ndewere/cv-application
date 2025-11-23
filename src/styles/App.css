@@ -51,6 +51,7 @@
     .generalInformation {
         width: 70%;
         padding: 1px 30px 0px 30px;
+        border: solid 2px #24323d;
     }
 
     .nav-img {

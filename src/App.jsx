@@ -26,6 +26,10 @@ function App() {
 • Work with distributed systems, messaging platforms, databases, and cloud technologies to support enterprise-scale solutions.
 `}]);
 
+  const [education, setEducation] = useState([{ degree: 'Master in cybersecurity', university: 'University of London', id: crypto.randomUUID(), from: '2022-09-01' , to: '2023-08-31' },
+    { degree: 'Bachelor of Computer Science', university: 'Kent University', id: crypto.randomUUID(), from: '2018-02-01' , to: '2020-11-01' }
+  ])
+
   return (
     <>
       <h2 className="desktop">GENERATE CV</h2>
@@ -56,6 +60,7 @@ function App() {
             workExperience={workExperience}
           />
           <EducationCV
+            education={education}
           />
         </div>
 

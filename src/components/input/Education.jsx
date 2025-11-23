@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Education() {
+function Education({}) {
     const [collapsible, openCollapsible] = useState(false);
 
     function handleSubmit() {
