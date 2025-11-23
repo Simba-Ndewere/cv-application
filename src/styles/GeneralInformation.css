@@ -18,6 +18,7 @@
 .generalContainer {
     width: 80%;
     display: none;
+    background-color: #24323d;
 }
 
 .form {
@@ -69,6 +70,7 @@
 
 .summary {
     height: 100px;
+    resize: none;
 }
 
 textarea {
@@ -113,6 +115,21 @@ textarea {
 }
 
 .deleteExpe {
+    cursor: pointer;
+}
+
+.generalInfoShown {
+    border: solid 2px black;
+    background-color: #24323d;
+    color: #1ab188;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.nameGeneral {
     cursor: pointer;
 }
 

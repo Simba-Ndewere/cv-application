@@ -5,7 +5,6 @@
 }
 
 .navContainer {
-  max-width: 1300px;
   margin: auto;
 }
 
@@ -56,5 +55,9 @@
 
   .closebtn {
     display: none;
+  }
+
+  .navContainer {
+    width: 100%;
   }
 }

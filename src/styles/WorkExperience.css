@@ -83,13 +83,15 @@ ul {
 }
 
 .enteredExperience {
-    padding: 0px 0px 0px 20px;
     background-color: #24323d;
     color: #1ab188;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
+    padding-left: 10px;
 }
+
 .enteredExperience img {
     height: 18px;
     width: 18px;
@@ -103,6 +105,7 @@ ul {
 
 .tasksInput {
     resize: none;
+    height: 100px;
 }
 
 .experienceSection {
@@ -124,6 +127,10 @@ ul {
 
 .workExperienceDiv p {
   margin-bottom: 0;
+}
+
+.companyExpe {
+    cursor: pointer;
 }
 
 @media (min-width: 1000px) {

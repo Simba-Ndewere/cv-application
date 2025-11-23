@@ -88,8 +88,7 @@ function WorkExperience({ workExperience, setWorkExperience }) {
                 {
                     workExperience.map((experience) => {
                         return <div key={experience.id} className="enteredExperience">
-                            <p className="titleExpe" onClick={() => populateForm(experience.id)}>{experience.title} - </p>
-                            <p className="companyExpe">{experience.company}</p>
+                            <p className="companyExpe" onClick={() => populateForm(experience.id)}>{experience.company}</p>
                             <div className="deleteExpe">
                                 <img src={deleteIcon} onClick={() => {
                                     setWorkExperience(

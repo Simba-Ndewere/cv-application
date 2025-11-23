@@ -4,8 +4,8 @@ import phoneImg from '../../assets/phone-call.png'
 import mailImg from '../../assets/mail.png'
 import addressImg from '../../assets/location-pin.png'
 
-function GeneralInformationCV({generalInfo}) {
-    
+function GeneralInformationCV({ generalInfo }) {
+
     return (
         <div className='generalContainerCV'>
             <p className='fullname'>{generalInfo.fullName}</p>

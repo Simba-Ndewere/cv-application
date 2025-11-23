@@ -10,7 +10,7 @@ import EducationCV from './components/output/EducationCV.jsx';
 function App() {
 
   const [navWidth, setNavWidth] = useState('0%');
-  const [generalInformation, setGeneralInfo] = useState({ fullName: 'John Doe', email: 'johndoe@gmail.com', phoneNumber: '012456890', address: 'london', personalStatement: 'I am a skilled Software Engineer with extensive experience building scalable, secure, and enterprise-grade applications within the financial services industry. I have strong expertise in modern web technologies, backend systems, microservices, and cloud platforms, and I excel at designing reliable, high-performance solutions while delivering clean, maintainable code. I enjoy solving complex technical challenges, improving engineering processes, and driving architectural enhancements that boost system performance, security, and resilience. With a solid foundation in Java, Spring Boot, JavaScript/TypeScript, React, and modern DevOps practices, I bring a balanced full-stack perspective, a strong collaborative mindset, and a commitment to continuous learning and innovation' });
+  const [generalInformation, setGeneralInfo] = useState({ fullName: 'John Doe', id: crypto.randomUUID(), email: 'johndoe@gmail.com', phoneNumber: '012456890', address: 'london', personalStatement: 'I am a skilled Software Engineer with extensive experience building scalable, secure, and enterprise-grade applications within the financial services industry. I have strong expertise in modern web technologies, backend systems, microservices, and cloud platforms, and I excel at designing reliable, high-performance solutions while delivering clean, maintainable code. I enjoy solving complex technical challenges, improving engineering processes, and driving architectural enhancements that boost system performance, security, and resilience. With a solid foundation in Java, Spring Boot, JavaScript/TypeScript, React, and modern DevOps practices, I bring a balanced full-stack perspective, a strong collaborative mindset, and a commitment to continuous learning and innovation' });
   const [skills, setSkills] = useState([{ name: 'react', id: crypto.randomUUID() }, { name: 'nextjs', id: crypto.randomUUID() }, { name: 'springboot', id: crypto.randomUUID() }, { name: 'javascript', id: crypto.randomUUID() }, { name: 'java', id: crypto.randomUUID() }, { name: 'nodejs', id: crypto.randomUUID() }, { name: 'typescript', id: crypto.randomUUID() }]);
   const [workExperience, setWorkExperience] = useState([{
     title: 'Senior Software Engineer', company: 'JP Morgan', id: crypto.randomUUID(), location: 'London', from: '2025-07-01', to: 'present', tasks: `• Lead the design, development, and deployment of high-performance, low-latency applications used across trading, payments, or risk platforms.
@@ -46,6 +46,9 @@ function App() {
             skills={skills}
             workExperience={workExperience}
             setWorkExperience={setWorkExperience}
+            education={education}
+            setEducation={setEducation}
+            generalInfo={generalInformation}
           />
           <h2 className="mobile">GENERATE CV</h2>
         </div>

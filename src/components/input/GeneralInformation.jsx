@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../../styles/GeneralInformation.css';
+import deleteIcon from '../../assets/delete.png'
 
-function GeneralInformation({ setGeneralInfo }) {
+function GeneralInformation({ generalInfo, setGeneralInfo }) {
 
     const [collapsible, openCollapsible] = useState(false);
 
