@@ -1,4 +1,5 @@
-.collapsibleExperience {
+.collapsibleExperience,
+.collapsibleEducation {
     cursor: pointer;
     padding: 18px;
     border: none;
@@ -30,6 +31,7 @@
 .titleLocation {
     display: flex;
     gap: 10px;
+    padding: 0%;
 }
 
 .titlePosition,
@@ -109,6 +111,21 @@ ul {
     gap: 10px;
 }
 
+.workExperienceDiv {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+
+.workExp {
+    padding: 0;
+    margin: 0;
+}
+
+.workExperienceDiv p {
+  margin-bottom: 0;
+}
+
 @media (min-width: 1000px) {
     .general {
         width: 100%;
@@ -118,7 +135,8 @@ ul {
         width: 100%;
     }
 
-    .collapsibleExperience {
+    .collapsibleExperience,
+    .collapsibleEducation {
         width: 100%;
     }
 }

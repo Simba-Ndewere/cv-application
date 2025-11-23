@@ -5,6 +5,7 @@ import InputForm from './components/input/InputForm.jsx'
 import GeneralInformationCV from './components/output/GeneralInformationCV.jsx'
 import SkillsCV from './components/output/SkillsCV.jsx';
 import WorkExperienceCV from './components/output/WorkExperienceCV.jsx';
+import EducationCV from './components/output/EducationCV.jsx';
 
 function App() {
 
@@ -53,6 +54,8 @@ function App() {
           />
           <WorkExperienceCV
             workExperience={workExperience}
+          />
+          <EducationCV
           />
         </div>
 

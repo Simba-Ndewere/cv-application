@@ -1,0 +1,13 @@
+.uniYear {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    color: gray;
+}
+
+.degree {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}

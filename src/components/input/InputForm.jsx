@@ -3,6 +3,7 @@ import closeImg from '../../assets/close.png'
 import GeneralInformation from './GeneralInformation';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
+import Education from './Education';
 
 function InputForm({ widthValue, setWidth, setGeneralInfo, setSkills, skills, workExperience, setWorkExperience }) {
 
@@ -18,6 +19,9 @@ function InputForm({ widthValue, setWidth, setGeneralInfo, setSkills, skills, wo
                 <WorkExperience
                     workExperience={workExperience}
                     setWorkExperience={setWorkExperience}/>
+                <Education
+                    
+                />
             </div>
         </div>
     )

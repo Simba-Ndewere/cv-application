@@ -2,9 +2,9 @@ function WorkExperienceCV({ workExperience }) {
     return (
         <div className="generalContainerCV">
             <div className="experienceSection">
-                <p className="titleCV">Work Experience</p>
+                <div className="workExperienceDiv"><p className="titleCV">Work Experience</p></div>
                 {workExperience.map((experience) => {
-                    return <div key={experience.id}>
+                    return <div className='workExp' key={experience.id}>
                         <div className="titleLocation">
                             <p className="titlePosition">{experience.title},</p>
                             <p className="location">{experience.location}</p>
