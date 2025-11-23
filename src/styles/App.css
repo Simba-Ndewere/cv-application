@@ -20,6 +20,7 @@
     background-color: #24323d;
     color: #1ab188;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-img img {
